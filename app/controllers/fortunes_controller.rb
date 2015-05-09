@@ -18,7 +18,8 @@ class FortunesController < ApplicationController
   @num1 = params[:num1]
   @num2 = params[:num2]
 
-  @numbers = [rand(@num1.to_i...@num2.to_i+1), rand(@num1.to_i...@num2.to_i+1), rand(@num1.to_i...@num2.to_i+1), rand(@num1.to_i...@num2.to_i+1), rand(@num1.to_i...@num2.to_i+1)]
+  @numbers = [rand(@num1.to_i..@num2.to_i), rand(@num1.to_i..@num2.to_i), rand(@num1.to_i..@num2.to_i), rand(@num1.to_i..@num2.to_i), rand(@num1.to_i..@num2.to_i)]
 
   end
 end
+
